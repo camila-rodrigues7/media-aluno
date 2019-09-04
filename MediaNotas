@@ -1,0 +1,15 @@
+from statics import mean
+
+class MediaNotas:
+
+	def __init__(self, nome, notas = []):
+		self.nome = nome
+		self.notas = notas
+
+
+	def nome_aluno(self, nome):
+		return self.nome
+
+	def calcular_media(self):
+		media = mean(self.notas)
+		return media
